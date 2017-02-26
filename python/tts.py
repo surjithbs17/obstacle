@@ -97,16 +97,13 @@ def response(path,tags, args, source):
 
 	global d 
 	d.append(args[0])
-	#print "appending"
+	print current_output
 	#print d[0]
 	if d[0] != current_output:
-		#print "thread_spawned"
-		if thread_flag:
-			print "inside"
-			t = threading.Thread(target=respond_voice,args = (args[1],))
-			t.start()
-			print "done"
+		print "thread_spawned"
+		respond_voice(d[0])
 
+		
 	
 
 server.addMsgHandler("/wek/outputs",response)

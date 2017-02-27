@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<WekiInputHelperFileData>
+  <oscReceivePort>12000</oscReceivePort>
+  <oscSendPort>12001</oscSendPort>
+  <sendHostname>localhost</sendHostname>
+  <sendOscMessage>/wek/outputs</sendOscMessage>
+  <inputs>
+    <oscMessage>/wek/python</oscMessage>
+    <numInputs>1</numInputs>
+    <groupName>Inputs</groupName>
+    <inputNames>
+      <string>python_1</string>
+    </inputNames>
+  </inputs>
+  <outputs>
+    <outputs class="linked-list">
+      <wekiinputhelper.Modifiers.BufferedInput>
+        <names>
+          <string>python_1[n-9]</string>
+          <string>python_1[n-8]</string>
+          <string>python_1[n-7]</string>
+          <string>python_1[n-6]</string>
+          <string>python_1[n-5]</string>
+          <string>python_1[n-4]</string>
+          <string>python_1[n-3]</string>
+          <string>python_1[n-2]</string>
+          <string>python_1[n-1]</string>
+          <string>python_1[n]</string>
+        </names>
+        <index>0</index>
+        <bufferSize>10</bufferSize>
+      </wekiinputhelper.Modifiers.BufferedInput>
+    </outputs>
+    <numOutputTypes>1</numOutputTypes>
+    <dimensionality>10</dimensionality>
+    <hasDependencies>false</hasDependencies>
+  </outputs>
+  <inputTriggerer class="wekiinputhelper.TriggerOnReceive">
+    <c>
+      <type>NONE</type>
+      <howLong>ONCE</howLong>
+      <index>0</index>
+      <val>0.0</val>
+      <appliesTo>INPUT</appliesTo>
+    </c>
+  </inputTriggerer>
+  <isSendingOriginalInputs>false</isSendingOriginalInputs>
+</WekiInputHelperFileData>
